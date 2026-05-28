@@ -1,0 +1,36 @@
+{
+  "model_name": "gte-multilingual-base",
+  "language": "ru",
+  "collection_name": "ru_common_gte_multilingual_base_chunk1000_overlap150",
+  "total_questions": 309,
+  "evaluated_questions": 309,
+  "failed_questions": 0,
+  "recall@1": 0.30097087378640774,
+  "recall@3": 0.48220064724919093,
+  "recall@5": 0.5825242718446602,
+  "mrr": 0.4165536549031695,
+  "ndcg": 0.6881953916906705,
+  "avg_latency_ms": 159.3383242764953,
+  "median_latency_ms": 157.1511582005769,
+  "run_id": "ru_common_gte-multilingual-base_ru_ru_ru_metadata_o_bank_Финансовый_Отчет_Финансовый_Отчет_all_questions_ru.repaired",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 1000,
+      "overlap": 150
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "machine": ""
+}

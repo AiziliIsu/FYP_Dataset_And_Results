@@ -1,0 +1,38 @@
+{
+  "model_name": "multilingual-e5",
+  "language": "en",
+  "collection_name": "ru_common_multilingual_e5_chunk1000_overlap150",
+  "total_questions": 206,
+  "evaluated_questions": 206,
+  "failed_questions": 0,
+  "recall@1": 0.1796116504854369,
+  "recall@3": 0.30097087378640774,
+  "recall@5": 0.33980582524271846,
+  "mrr": 0.24672907998150717,
+  "ndcg": 0.29027901396964,
+  "avg_latency_ms": 141.23786796105898,
+  "median_latency_ms": 140.17974999842409,
+  "run_id": "ru_common_multilingual-e5_en_opio_Тарифы_и_тарифные_планы_all_questions_en.repaired.jsonl",
+  "question_file": "opio_Тарифы_и_тарифные_планы_all_questions_en.repaired.jsonl",
+  "question_file_path": "C:\\Users\\1000001392\\.vscode\\ru_common\\ru_ru_metadata\\opio\\opio_Тарифы_и_тарифные_планы\\opio_Тарифы_и_тарифные_планы_all_questions_en.repaired.jsonl",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 1000,
+      "overlap": 150
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "machine": "UCA-NR-NBK-HL9"
+}

@@ -1,0 +1,36 @@
+{
+  "model_name": "gte-multilingual-base",
+  "language": "en",
+  "collection_name": "ru_common_gte_multilingual_base_chunk1000_overlap150",
+  "total_questions": 206,
+  "evaluated_questions": 206,
+  "failed_questions": 0,
+  "recall@1": 0.16990291262135923,
+  "recall@3": 0.2766990291262136,
+  "recall@5": 0.3058252427184466,
+  "mrr": 0.2270727384805055,
+  "ndcg": 0.2797332308207891,
+  "avg_latency_ms": 139.16132102937448,
+  "median_latency_ms": 136.93694456014782,
+  "run_id": "ru_common_gte-multilingual-base_en_ru_ru_metadata_opio_opio_Тарифы_и_тарифные_планы_opio_Тарифы_и_тарифные_планы_all_questions_en.repaired",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 1000,
+      "overlap": 150
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "machine": ""
+}

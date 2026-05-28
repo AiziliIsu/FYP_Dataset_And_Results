@@ -1,0 +1,36 @@
+{
+  "model_name": "text-embedding-3-small",
+  "language": "en",
+  "collection_name": "ru_common_text_embedding_3_small_chunk1000_overlap150",
+  "total_questions": 149,
+  "evaluated_questions": 149,
+  "failed_questions": 0,
+  "recall@1": 0.5503355704697986,
+  "recall@3": 0.6577181208053692,
+  "recall@5": 0.7248322147651006,
+  "mrr": 0.623777564717162,
+  "ndcg": 0.8443982448803776,
+  "avg_latency_ms": 283.7771565790894,
+  "median_latency_ms": 277.1650170907378,
+  "run_id": "ru_common_text-embedding-3-small_en_russian_part_3.5.filtered.fixed_questions_en.repaired.jsonl",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 1000,
+      "overlap": 150
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "machine": ""
+}

@@ -1,0 +1,36 @@
+{
+  "model_name": "text-embedding-3-small",
+  "language": "ru",
+  "collection_name": "ru_common_text_embedding_3_small_chunk1000_overlap150",
+  "total_questions": 137,
+  "evaluated_questions": 137,
+  "failed_questions": 0,
+  "recall@1": 0.708029197080292,
+  "recall@3": 0.8248175182481752,
+  "recall@5": 0.8394160583941606,
+  "mrr": 0.7697775460549182,
+  "ndcg": 0.9416367456216372,
+  "avg_latency_ms": 246.33834428616194,
+  "median_latency_ms": 208.31149094738066,
+  "run_id": "ru_common_text-embedding-3-small_ru_opio_Банк_и_платежи_all_questions_ru.repaired.jsonl",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 1000,
+      "overlap": 150
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "machine": ""
+}

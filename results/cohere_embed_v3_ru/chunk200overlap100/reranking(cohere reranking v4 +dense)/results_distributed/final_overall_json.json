@@ -1,0 +1,682 @@
+{
+  "generated_at": "2026-05-02T01:09:37",
+  "source_folder": "C:\\Users\\1000001392\\.vscode\\results\\cohere_embed_v3_ru\\chunk200overlap100\\reranking(cohere reranking v4 +dense)\\results_distributed",
+  "summary_files_processed": 25,
+  "summary_files_skipped": 0,
+  "language_metrics": {
+    "en": {
+      "file_count": 8,
+      "total_questions": 1934,
+      "evaluated_questions": 1934,
+      "pre_rerank": {
+        "recall_at_10": 0.7990649898454832,
+        "recall_at_20": 0.8428304309255552,
+        "mrr": 0.642164619132265
+      },
+      "post_rerank": {
+        "recall_at_5": 0.7281701630302109,
+        "recall_at_1": 0.49677860224500453,
+        "recall_at_3": 0.6729260308875578,
+        "recall_at_5_v2": 0.7281701630302109,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.5881720081687746,
+        "ndcg": 1.0298567850095772
+      },
+      "latency_ms": {
+        "avg": 592.7735780479694,
+        "median": 538.9097391162068
+      }
+    },
+    "kg": {
+      "file_count": 8,
+      "total_questions": 1920,
+      "evaluated_questions": 1920,
+      "pre_rerank": {
+        "recall_at_10": 0.715770294729068,
+        "recall_at_20": 0.761770652371887,
+        "mrr": 0.5789318422729416
+      },
+      "post_rerank": {
+        "recall_at_5": 0.5987875911040227,
+        "recall_at_1": 0.32328699402745575,
+        "recall_at_3": 0.5286183860171378,
+        "recall_at_5_v2": 0.5987875911040227,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.4291377921952702,
+        "ndcg": 0.7129757896072648
+      },
+      "latency_ms": {
+        "avg": 547.6980620703706,
+        "median": 532.4819106608629
+      }
+    },
+    "ru": {
+      "file_count": 9,
+      "total_questions": 1816,
+      "evaluated_questions": 1816,
+      "pre_rerank": {
+        "recall_at_10": 0.8206510607251796,
+        "recall_at_20": 0.871928106790373,
+        "mrr": 0.6656319674067325
+      },
+      "post_rerank": {
+        "recall_at_5": 0.7769083904411505,
+        "recall_at_1": 0.5526834924828351,
+        "recall_at_3": 0.7292454659638961,
+        "recall_at_5_v2": 0.7769083904411505,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.6421946916867737,
+        "ndcg": 1.0441358913874876
+      },
+      "latency_ms": {
+        "avg": 554.5897079724455,
+        "median": 530.9364162385464
+      }
+    }
+  },
+  "per_file_details": [
+    {
+      "summary_file": "ru_common_cohere-embed-v3_en_o!bank__O!Business__O!Business_all_questions_en.repaired.jsonl_summary.json",
+      "language": "en",
+      "evaluated_questions": 184,
+      "pre_rerank": {
+        "recall_at_10": 0.46195652173913043,
+        "recall_at_20": 0.6195652173913043,
+        "mrr": 0.24638271155677602
+      },
+      "post_rerank": {
+        "recall_at_5": 0.28804347826086957,
+        "recall_at_1": 0.08152173913043478,
+        "recall_at_3": 0.22282608695652173,
+        "recall_at_5_v2": 0.28804347826086957,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.15905797101449276,
+        "ndcg": 0.25726722989817513
+      },
+      "latency_ms": {
+        "avg": 570.3758070189708,
+        "median": 538.3089953102171
+      }
+    },
+    {
+      "summary_file": "ru_common_cohere-embed-v3_en_o!bank__Финансовый Отчет__Финансовый Отчет_all_questions_en.repaired.jsonl_summary.json",
+      "language": "en",
+      "evaluated_questions": 309,
+      "pre_rerank": {
+        "recall_at_10": 0.7540453074433657,
+        "recall_at_20": 0.8317152103559871,
+        "mrr": 0.43941229387402997
+      },
+      "post_rerank": {
+        "recall_at_5": 0.6310679611650486,
+        "recall_at_1": 0.36245954692556637,
+        "recall_at_3": 0.540453074433657,
+        "recall_at_5_v2": 0.6310679611650486,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.4626752966558792,
+        "ndcg": 0.9518667377307203
+      },
+      "latency_ms": {
+        "avg": 598.152529944072,
+        "median": 540.2012071572244
+      }
+    },
+    {
+      "summary_file": "ru_common_cohere-embed-v3_en_o!store__o!store_all_questions_en.repaired.jsonl_summary.json",
+      "language": "en",
+      "evaluated_questions": 320,
+      "pre_rerank": {
+        "recall_at_10": 0.9625,
+        "recall_at_20": 0.96875,
+        "mrr": 0.7896804887820512
+      },
+      "post_rerank": {
+        "recall_at_5": 0.90625,
+        "recall_at_1": 0.603125,
+        "recall_at_3": 0.846875,
+        "recall_at_5_v2": 0.90625,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.7220312499999999,
+        "ndcg": 0.8156216174034874
+      },
+      "latency_ms": {
+        "avg": 532.4793309831875,
+        "median": 524.7223135083914
+      }
+    },
+    {
+      "summary_file": "ru_common_cohere-embed-v3_en_opio__opio_Акции_и_новости__opio_Акции_и_новости_all_questions_en.repaired.jsonl_summary.json",
+      "language": "en",
+      "evaluated_questions": 169,
+      "pre_rerank": {
+        "recall_at_10": 0.9644970414201184,
+        "recall_at_20": 0.9763313609467456,
+        "mrr": 0.8023929062390601
+      },
+      "post_rerank": {
+        "recall_at_5": 0.8757396449704142,
+        "recall_at_1": 0.44970414201183434,
+        "recall_at_3": 0.8106508875739645,
+        "recall_at_5_v2": 0.8757396449704142,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.6272189349112426,
+        "ndcg": 1.0118908201045365
+      },
+      "latency_ms": {
+        "avg": 773.105134016465,
+        "median": 541.0900702700019
+      }
+    },
+    {
+      "summary_file": "ru_common_cohere-embed-v3_en_opio__opio_ОTV_и_медиа__opio_ОTV_и_медиа_all_questions_en.repaired.jsonl_summary.json",
+      "language": "en",
+      "evaluated_questions": 85,
+      "pre_rerank": {
+        "recall_at_10": 0.4117647058823529,
+        "recall_at_20": 0.43529411764705883,
+        "mrr": 0.31756302521008406
+      },
+      "post_rerank": {
+        "recall_at_5": 0.3411764705882353,
+        "recall_at_1": 0.23529411764705882,
+        "recall_at_3": 0.32941176470588235,
+        "recall_at_5_v2": 0.3411764705882353,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.2807843137254902,
+        "ndcg": 0.4691456523471564
+      },
+      "latency_ms": {
+        "avg": 571.3495218249805,
+        "median": 526.1311247013509
+      }
+    },
+    {
+      "summary_file": "ru_common_cohere-embed-v3_en_russian__russian_2__russian_part_2.3.filtered_questions_en.repaired.jsonl_summary.json",
+      "language": "en",
+      "evaluated_questions": 556,
+      "pre_rerank": {
+        "recall_at_10": 0.9424460431654677,
+        "recall_at_20": 0.9496402877697842,
+        "mrr": 0.8444584267650814
+      },
+      "post_rerank": {
+        "recall_at_5": 0.9046762589928058,
+        "recall_at_1": 0.762589928057554,
+        "recall_at_3": 0.8651079136690647,
+        "recall_at_5_v2": 0.9046762589928058,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.816726618705036,
+        "ndcg": 1.5017145549746398
+      },
+      "latency_ms": {
+        "avg": 559.7405952280857,
+        "median": 539.5104829221964
+      }
+    },
+    {
+      "summary_file": "ru_common_cohere-embed-v3_en_russian__russian_3__russian_part_3.3.filtered.fixed_questions_en.repaired.jsonl_summary.json",
+      "language": "en",
+      "evaluated_questions": 162,
+      "pre_rerank": {
+        "recall_at_10": 0.9691358024691358,
+        "recall_at_20": 0.9814814814814815,
+        "mrr": 0.8678010261343594
+      },
+      "post_rerank": {
+        "recall_at_5": 0.9320987654320988,
+        "recall_at_1": 0.7345679012345679,
+        "recall_at_3": 0.8888888888888888,
+        "recall_at_5_v2": 0.9320987654320988,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.8157407407407407,
+        "ndcg": 1.6233879629941095
+      },
+      "latency_ms": {
+        "avg": 550.8102560473353,
+        "median": 540.4619011096656
+      }
+    },
+    {
+      "summary_file": "ru_common_cohere-embed-v3_en_russian__russian_3__russian_part_3.5.filtered.fixed_questions_en.repaired.jsonl_summary.json",
+      "language": "en",
+      "evaluated_questions": 149,
+      "pre_rerank": {
+        "recall_at_10": 0.9261744966442953,
+        "recall_at_20": 0.9798657718120806,
+        "mrr": 0.8296260744966772
+      },
+      "post_rerank": {
+        "recall_at_5": 0.9463087248322147,
+        "recall_at_1": 0.7449664429530202,
+        "recall_at_3": 0.8791946308724832,
+        "recall_at_5_v2": 0.9463087248322147,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.8211409395973154,
+        "ndcg": 1.607959704623793
+      },
+      "latency_ms": {
+        "avg": 586.1754493206589,
+        "median": 536.1167918890715
+      }
+    },
+    {
+      "summary_file": "ru_common_cohere-embed-v3_kg_o!bank__O!Business__O!Business_all_questions_kg.repaired.jsonl_summary.json",
+      "language": "kg",
+      "evaluated_questions": 184,
+      "pre_rerank": {
+        "recall_at_10": 0.41847826086956524,
+        "recall_at_20": 0.6032608695652174,
+        "mrr": 0.23788558853128447
+      },
+      "post_rerank": {
+        "recall_at_5": 0.2717391304347826,
+        "recall_at_1": 0.10326086956521739,
+        "recall_at_3": 0.20652173913043478,
+        "recall_at_5_v2": 0.2717391304347826,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.1644927536231884,
+        "ndcg": 0.2623057575067299
+      },
+      "latency_ms": {
+        "avg": 560.2420446559098,
+        "median": 539.0664793085307
+      }
+    },
+    {
+      "summary_file": "ru_common_cohere-embed-v3_kg_o!store__o!store_all_questions_kg.repaired.jsonl_summary.json",
+      "language": "kg",
+      "evaluated_questions": 322,
+      "pre_rerank": {
+        "recall_at_10": 0.9254658385093167,
+        "recall_at_20": 0.9409937888198758,
+        "mrr": 0.7483901736271792
+      },
+      "post_rerank": {
+        "recall_at_5": 0.8509316770186336,
+        "recall_at_1": 0.5031055900621118,
+        "recall_at_3": 0.7981366459627329,
+        "recall_at_5_v2": 0.8509316770186336,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.6447722567287785,
+        "ndcg": 0.7292348159456624
+      },
+      "latency_ms": {
+        "avg": 535.685366136745,
+        "median": 523.3813065569848
+      }
+    },
+    {
+      "summary_file": "ru_common_cohere-embed-v3_kg_opio__opio_Акции_и_новости__opio_Акции_и_новости_all_questions_kg.repaired.jsonl_summary.json",
+      "language": "kg",
+      "evaluated_questions": 169,
+      "pre_rerank": {
+        "recall_at_10": 0.8816568047337278,
+        "recall_at_20": 0.8994082840236687,
+        "mrr": 0.7413915801489765
+      },
+      "post_rerank": {
+        "recall_at_5": 0.7041420118343196,
+        "recall_at_1": 0.378698224852071,
+        "recall_at_3": 0.6094674556213018,
+        "recall_at_5_v2": 0.7041420118343196,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.5041420118343195,
+        "ndcg": 0.8471283231685096
+      },
+      "latency_ms": {
+        "avg": 542.4840634264405,
+        "median": 530.4401381872594
+      }
+    },
+    {
+      "summary_file": "ru_common_cohere-embed-v3_kg_opio__opio_Номера_и_SIM__opio_Номера_и_SIM_all_questions_kg.repaired.jsonl_summary.json",
+      "language": "kg",
+      "evaluated_questions": 52,
+      "pre_rerank": {
+        "recall_at_10": 0.40384615384615385,
+        "recall_at_20": 0.4807692307692308,
+        "mrr": 0.26019206839044895
+      },
+      "post_rerank": {
+        "recall_at_5": 0.3076923076923077,
+        "recall_at_1": 0.11538461538461539,
+        "recall_at_3": 0.21153846153846154,
+        "recall_at_5_v2": 0.3076923076923077,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.1791666666666667,
+        "ndcg": 0.31368498146776097
+      },
+      "latency_ms": {
+        "avg": 528.1718624307989,
+        "median": 526.1668269522488
+      }
+    },
+    {
+      "summary_file": "ru_common_cohere-embed-v3_kg_opio__opio_ОTV_и_медиа__opio_ОTV_и_медиа_all_questions_kg.repaired.jsonl_summary.json",
+      "language": "kg",
+      "evaluated_questions": 85,
+      "pre_rerank": {
+        "recall_at_10": 0.3764705882352941,
+        "recall_at_20": 0.3764705882352941,
+        "mrr": 0.29334733893557424
+      },
+      "post_rerank": {
+        "recall_at_5": 0.3764705882352941,
+        "recall_at_1": 0.17647058823529413,
+        "recall_at_3": 0.35294117647058826,
+        "recall_at_5_v2": 0.3764705882352941,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.2641176470588235,
+        "ndcg": 0.43033999555878444
+      },
+      "latency_ms": {
+        "avg": 530.7965487734798,
+        "median": 525.0978162512183
+      }
+    },
+    {
+      "summary_file": "ru_common_cohere-embed-v3_kg_russian__russian_2__russian_part_2.12.filtered_questions_kg.repaired.jsonl_summary.json",
+      "language": "kg",
+      "evaluated_questions": 783,
+      "pre_rerank": {
+        "recall_at_10": 0.89272030651341,
+        "recall_at_20": 0.9208173690932312,
+        "mrr": 0.7669190764737484
+      },
+      "post_rerank": {
+        "recall_at_5": 0.7662835249042146,
+        "recall_at_1": 0.4495530012771392,
+        "recall_at_3": 0.6679438058748404,
+        "recall_at_5_v2": 0.7662835249042146,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.567624521072797,
+        "ndcg": 0.9755767943732865
+      },
+      "latency_ms": {
+        "avg": 581.7584413434421,
+        "median": 542.1583969146013
+      }
+    },
+    {
+      "summary_file": "ru_common_cohere-embed-v3_kg_russian__russian_3__russian_part_3.4.filtered.fixed_questions_kg.repaired.jsonl_summary.json",
+      "language": "kg",
+      "evaluated_questions": 176,
+      "pre_rerank": {
+        "recall_at_10": 0.9147727272727273,
+        "recall_at_20": 0.9261363636363636,
+        "mrr": 0.7943474927849927
+      },
+      "post_rerank": {
+        "recall_at_5": 0.7613636363636364,
+        "recall_at_1": 0.4772727272727273,
+        "recall_at_3": 0.7045454545454546,
+        "recall_at_5_v2": 0.7613636363636364,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.5860795454545454,
+        "ndcg": 1.1207256507947796
+      },
+      "latency_ms": {
+        "avg": 563.2238929921931,
+        "median": 539.9862844496965
+      }
+    },
+    {
+      "summary_file": "ru_common_cohere-embed-v3_kg_russian__russian_3__russian_part_3.5.filtered.fixed_questions_kg.repaired.jsonl_summary.json",
+      "language": "kg",
+      "evaluated_questions": 149,
+      "pre_rerank": {
+        "recall_at_10": 0.912751677852349,
+        "recall_at_20": 0.9463087248322147,
+        "mrr": 0.7889814192913285
+      },
+      "post_rerank": {
+        "recall_at_5": 0.7516778523489933,
+        "recall_at_1": 0.3825503355704698,
+        "recall_at_3": 0.6778523489932886,
+        "recall_at_5_v2": 0.7516778523489933,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.5227069351230424,
+        "ndcg": 1.0248099980426055
+      },
+      "latency_ms": {
+        "avg": 539.2222768039561,
+        "median": 534.5236831344664
+      }
+    },
+    {
+      "summary_file": "ru_common_cohere-embed-v3_ru_o!__o!_all_questions_ru.repaired.jsonl_summary.json",
+      "language": "ru",
+      "evaluated_questions": 316,
+      "pre_rerank": {
+        "recall_at_10": 0.8607594936708861,
+        "recall_at_20": 0.9113924050632911,
+        "mrr": 0.6609853152039489
+      },
+      "post_rerank": {
+        "recall_at_5": 0.7943037974683544,
+        "recall_at_1": 0.5031645569620253,
+        "recall_at_3": 0.7278481012658228,
+        "recall_at_5_v2": 0.7943037974683544,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.61292194092827,
+        "ndcg": 1.136049469929011
+      },
+      "latency_ms": {
+        "avg": 550.3044770264268,
+        "median": 537.8942431416363
+      }
+    },
+    {
+      "summary_file": "ru_common_cohere-embed-v3_ru_o!bank__O!Business__O!Business_all_questions_ru.repaired.jsonl_summary.json",
+      "language": "ru",
+      "evaluated_questions": 184,
+      "pre_rerank": {
+        "recall_at_10": 0.5815217391304348,
+        "recall_at_20": 0.782608695652174,
+        "mrr": 0.3095280588518659
+      },
+      "post_rerank": {
+        "recall_at_5": 0.4891304347826087,
+        "recall_at_1": 0.20108695652173914,
+        "recall_at_3": 0.41304347826086957,
+        "recall_at_5_v2": 0.4891304347826087,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.31177536231884057,
+        "ndcg": 0.4748354070276056
+      },
+      "latency_ms": {
+        "avg": 578.0951373238603,
+        "median": 541.7461215984076
+      }
+    },
+    {
+      "summary_file": "ru_common_cohere-embed-v3_ru_o!bank__Финансовый Отчет__Финансовый Отчет_all_questions_ru.repaired.jsonl_summary.json",
+      "language": "ru",
+      "evaluated_questions": 309,
+      "pre_rerank": {
+        "recall_at_10": 0.7281553398058253,
+        "recall_at_20": 0.8381877022653722,
+        "mrr": 0.44514351309415795
+      },
+      "post_rerank": {
+        "recall_at_5": 0.6699029126213593,
+        "recall_at_1": 0.40129449838187703,
+        "recall_at_3": 0.5954692556634305,
+        "recall_at_5_v2": 0.6699029126213593,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.4995145631067961,
+        "ndcg": 0.8720053153909106
+      },
+      "latency_ms": {
+        "avg": 551.9216627750582,
+        "median": 532.5896767899394
+      }
+    },
+    {
+      "summary_file": "ru_common_cohere-embed-v3_ru_o!store__o!store_all_questions_ru.repaired.jsonl_summary.json",
+      "language": "ru",
+      "evaluated_questions": 320,
+      "pre_rerank": {
+        "recall_at_10": 0.959375,
+        "recall_at_20": 0.96875,
+        "mrr": 0.8721885492979243
+      },
+      "post_rerank": {
+        "recall_at_5": 0.94375,
+        "recall_at_1": 0.8125,
+        "recall_at_3": 0.925,
+        "recall_at_5_v2": 0.94375,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.8682812499999999,
+        "ndcg": 0.940029299716253
+      },
+      "latency_ms": {
+        "avg": 553.3616291635553,
+        "median": 524.5856910478324
+      }
+    },
+    {
+      "summary_file": "ru_common_cohere-embed-v3_ru_opio__opio_OStore_и_товары__opio_OStore_и_товары_all_questions_ru.repaired.jsonl_summary.json",
+      "language": "ru",
+      "evaluated_questions": 169,
+      "pre_rerank": {
+        "recall_at_10": 0.9585798816568047,
+        "recall_at_20": 0.9763313609467456,
+        "mrr": 0.7768270191347115
+      },
+      "post_rerank": {
+        "recall_at_5": 0.8816568047337278,
+        "recall_at_1": 0.5680473372781065,
+        "recall_at_3": 0.8047337278106509,
+        "recall_at_5_v2": 0.8816568047337278,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.6913214990138068,
+        "ndcg": 1.3203996924626331
+      },
+      "latency_ms": {
+        "avg": 579.9670330684125,
+        "median": 530.9364162385464
+      }
+    },
+    {
+      "summary_file": "ru_common_cohere-embed-v3_ru_opio__opio_Акции_и_новости__opio_Акции_и_новости_all_questions_ru.repaired.jsonl_summary.json",
+      "language": "ru",
+      "evaluated_questions": 169,
+      "pre_rerank": {
+        "recall_at_10": 0.9940828402366864,
+        "recall_at_20": 1.0,
+        "mrr": 0.8661101718794025
+      },
+      "post_rerank": {
+        "recall_at_5": 0.9644970414201184,
+        "recall_at_1": 0.6449704142011834,
+        "recall_at_3": 0.9289940828402367,
+        "recall_at_5_v2": 0.9644970414201184,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.7824457593688364,
+        "ndcg": 1.2227247239718233
+      },
+      "latency_ms": {
+        "avg": 533.4394807051095,
+        "median": 528.1684971414506
+      }
+    },
+    {
+      "summary_file": "ru_common_cohere-embed-v3_ru_opio__opio_Банк_и_платежи__opio_Банк_и_платежи_all_questions_ru.repaired.jsonl_summary.json",
+      "language": "ru",
+      "evaluated_questions": 137,
+      "pre_rerank": {
+        "recall_at_10": 0.927007299270073,
+        "recall_at_20": 0.927007299270073,
+        "mrr": 0.8436739659367396
+      },
+      "post_rerank": {
+        "recall_at_5": 0.9197080291970803,
+        "recall_at_1": 0.781021897810219,
+        "recall_at_3": 0.8978102189781022,
+        "recall_at_5_v2": 0.9197080291970803,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.8424574209245741,
+        "ndcg": 1.242752807654135
+      },
+      "latency_ms": {
+        "avg": 533.2765548530775,
+        "median": 528.9189922623336
+      }
+    },
+    {
+      "summary_file": "ru_common_cohere-embed-v3_ru_opio__opio_ОTV_и_медиа__opio_ОTV_и_медиа_all_questions_ru.repaired.jsonl_summary.json",
+      "language": "ru",
+      "evaluated_questions": 85,
+      "pre_rerank": {
+        "recall_at_10": 0.4,
+        "recall_at_20": 0.4588235294117647,
+        "mrr": 0.323155247745031
+      },
+      "post_rerank": {
+        "recall_at_5": 0.3764705882352941,
+        "recall_at_1": 0.23529411764705882,
+        "recall_at_3": 0.3411764705882353,
+        "recall_at_5_v2": 0.3764705882352941,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.29058823529411765,
+        "ndcg": 0.4439574737107364
+      },
+      "latency_ms": {
+        "avg": 549.8772531090414,
+        "median": 525.0061047263443
+      }
+    },
+    {
+      "summary_file": "ru_common_cohere-embed-v3_ru_russian__russian_3__russian_part_3.12.filtered.fixed_questions_ru.repaired.jsonl_summary.json",
+      "language": "ru",
+      "evaluated_questions": 127,
+      "pre_rerank": {
+        "recall_at_10": 0.9763779527559056,
+        "recall_at_20": 0.984251968503937,
+        "mrr": 0.8930758655168104
+      },
+      "post_rerank": {
+        "recall_at_5": 0.952755905511811,
+        "recall_at_1": 0.8267716535433071,
+        "recall_at_3": 0.9291338582677166,
+        "recall_at_5_v2": 0.952755905511811,
+        "recall_at_10": null,
+        "recall_at_20": null,
+        "mrr": 0.8804461942257218,
+        "ndcg": 1.7444688326242803
+      },
+      "latency_ms": {
+        "avg": 561.0641437274675,
+        "median": 540.2234620414674
+      }
+    }
+  ]
+}

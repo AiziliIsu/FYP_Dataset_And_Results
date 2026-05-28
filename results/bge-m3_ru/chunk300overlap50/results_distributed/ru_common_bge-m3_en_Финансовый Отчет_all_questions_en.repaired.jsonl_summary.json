@@ -1,0 +1,38 @@
+{
+  "model_name": "bge-m3",
+  "language": "en",
+  "collection_name": "ru_common_bge_m3_chunk300_overlap50",
+  "total_questions": 309,
+  "evaluated_questions": 309,
+  "failed_questions": 0,
+  "recall@1": 0.2977346278317152,
+  "recall@3": 0.5048543689320388,
+  "recall@5": 0.6019417475728155,
+  "mrr": 0.42228129655314117,
+  "ndcg": 0.6980512090775188,
+  "avg_latency_ms": 131.38473042306524,
+  "median_latency_ms": 130.71980001404881,
+  "run_id": "ru_common_bge-m3_en_Финансовый Отчет_all_questions_en.repaired.jsonl",
+  "question_file": "Финансовый Отчет_all_questions_en.repaired.jsonl",
+  "question_file_path": "C:\\Users\\1000001392\\.vscode\\ru_common\\ru_ru_metadata\\o!bank\\Финансовый Отчет\\Финансовый Отчет_all_questions_en.repaired.jsonl",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 300,
+      "overlap": 50
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "machine": "UCA-NR-NBK-HL9"
+}

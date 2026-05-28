@@ -1,0 +1,38 @@
+{
+  "model_name": "multilingual-e5",
+  "language": "ru",
+  "collection_name": "ru_common_multilingual_e5_chunk1000_overlap150",
+  "total_questions": 9,
+  "evaluated_questions": 9,
+  "failed_questions": 0,
+  "recall@1": 0.7777777777777778,
+  "recall@3": 0.8888888888888888,
+  "recall@5": 0.8888888888888888,
+  "mrr": 0.845679012345679,
+  "ndcg": 0.9865706307725317,
+  "avg_latency_ms": 134.41194444466316,
+  "median_latency_ms": 136.18750000023283,
+  "run_id": "ru_common_multilingual-e5_ru_opio_Saima_Telecom_all_questions_ru.repaired.jsonl",
+  "question_file": "opio_Saima_Telecom_all_questions_ru.repaired.jsonl",
+  "question_file_path": "C:\\Users\\1000001392\\.vscode\\ru_common\\ru_ru_metadata\\opio\\opio_Saima_Telecom\\opio_Saima_Telecom_all_questions_ru.repaired.jsonl",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 1000,
+      "overlap": 150
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "machine": "UCA-NR-NBK-HL9"
+}

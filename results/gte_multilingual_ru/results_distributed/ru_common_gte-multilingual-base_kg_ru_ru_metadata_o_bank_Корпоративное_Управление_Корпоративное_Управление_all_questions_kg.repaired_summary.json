@@ -1,0 +1,36 @@
+{
+  "model_name": "gte-multilingual-base",
+  "language": "kg",
+  "collection_name": "ru_common_gte_multilingual_base_chunk1000_overlap150",
+  "total_questions": 33,
+  "evaluated_questions": 33,
+  "failed_questions": 0,
+  "recall@1": 0.18181818181818182,
+  "recall@3": 0.5151515151515151,
+  "recall@5": 0.6363636363636364,
+  "mrr": 0.3845839345839346,
+  "ndcg": 0.6891612642088614,
+  "avg_latency_ms": 143.4509733861143,
+  "median_latency_ms": 142.83697307109833,
+  "run_id": "ru_common_gte-multilingual-base_kg_ru_ru_metadata_o_bank_Корпоративное_Управление_Корпоративное_Управление_all_questions_kg.repaired",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 1000,
+      "overlap": 150
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "machine": ""
+}

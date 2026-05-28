@@ -1,0 +1,76 @@
+{
+  "model_name": "cohere-embed-v3",
+  "language": "en",
+  "collection_name": "ru_common_cohere_embed_v3_chunk200_overlap100",
+  "total_questions": 169,
+  "evaluated_questions": 169,
+  "failed_questions": 0,
+  "reranking_enabled": true,
+  "pre_rerank_recall@10": 0.9644970414201184,
+  "pre_rerank_recall@20": 0.9763313609467456,
+  "post_rerank_recall@5": 0.9408284023668639,
+  "recall@1": 0.5443786982248521,
+  "recall@3": 0.8284023668639053,
+  "recall@5": 0.9408284023668639,
+  "pre_rerank_mrr": 0.8023929062390601,
+  "mrr": 0.6969428007889547,
+  "ndcg": 1.1044792599677742,
+  "avg_latency_ms": 33434.86701290691,
+  "median_latency_ms": 32766.60290500149,
+  "run_id": "ru_common_cohere-embed-v3_en_opio__opio_Акции_и_новости__opio_Акции_и_новости_all_questions_en.repaired.jsonl",
+  "questions_file": "ru_ru_metadata/opio/opio_Акции_и_новости/opio_Акции_и_новости_all_questions_en.repaired.jsonl",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 200,
+      "overlap": 100
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "experiments": {
+    "retrieval": {
+      "strategy": "dense",
+      "top_k": 20,
+      "candidate_multiplier": 20,
+      "hybrid": {
+        "dense": {
+          "model": "run"
+        },
+        "sparse": {
+          "strategy": "bm25"
+        },
+        "fusion": {
+          "method": "rrf",
+          "rrf_k": 60,
+          "dense_weight": 0.75,
+          "sparse_weight": 0.25
+        }
+      }
+    },
+    "reranking": {
+      "enabled": true,
+      "model": "Qwen3-Reranker-0.6B",
+      "top_k": 5,
+      "cohere_model_id": "rerank-v4.0"
+    },
+    "chunk_window": {
+      "enabled": false,
+      "mode": "symmetric",
+      "left": 1,
+      "right": 1,
+      "forward": 2
+    }
+  },
+  "machine": ""
+}

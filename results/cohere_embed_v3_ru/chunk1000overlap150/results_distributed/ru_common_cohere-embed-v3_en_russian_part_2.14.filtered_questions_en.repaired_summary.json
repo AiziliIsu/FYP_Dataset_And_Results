@@ -1,0 +1,36 @@
+{
+  "model_name": "cohere-embed-v3",
+  "language": "en",
+  "collection_name": "ru_common_cohere_embed_v3_chunk1000_overlap150",
+  "total_questions": 719,
+  "evaluated_questions": 719,
+  "failed_questions": 0,
+  "recall@1": 0.6689847009735744,
+  "recall@3": 0.799721835883171,
+  "recall@5": 0.8442280945757997,
+  "mrr": 0.7420806013643287,
+  "ndcg": 0.8837879514684495,
+  "avg_latency_ms": 310.3222341269581,
+  "median_latency_ms": 277.0820290315896,
+  "run_id": "ru_common_cohere-embed-v3_en_russian_part_2.14.filtered_questions_en.repaired",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 1000,
+      "overlap": 150
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "machine": ""
+}

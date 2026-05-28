@@ -1,0 +1,36 @@
+{
+  "model_name": "gte-multilingual-base",
+  "language": "ru",
+  "collection_name": "ru_common_gte_multilingual_base_chunk1000_overlap150",
+  "total_questions": 315,
+  "evaluated_questions": 315,
+  "failed_questions": 0,
+  "recall@1": 0.4031746031746032,
+  "recall@3": 0.5777777777777777,
+  "recall@5": 0.6190476190476191,
+  "mrr": 0.4994746787603931,
+  "ndcg": 0.684712159530116,
+  "avg_latency_ms": 131.4815134135267,
+  "median_latency_ms": 128.34328413009644,
+  "run_id": "ru_common_gte-multilingual-base_ru_ru_ru_metadata_opio_opio_Прочее_opio_Прочее_all_questions_ru.repaired",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 1000,
+      "overlap": 150
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "machine": ""
+}

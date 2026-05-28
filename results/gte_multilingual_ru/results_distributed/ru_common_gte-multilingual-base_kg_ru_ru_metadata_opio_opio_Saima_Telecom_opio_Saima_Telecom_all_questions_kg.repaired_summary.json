@@ -1,0 +1,36 @@
+{
+  "model_name": "gte-multilingual-base",
+  "language": "kg",
+  "collection_name": "ru_common_gte_multilingual_base_chunk1000_overlap150",
+  "total_questions": 9,
+  "evaluated_questions": 9,
+  "failed_questions": 0,
+  "recall@1": 0.5555555555555556,
+  "recall@3": 0.6666666666666666,
+  "recall@5": 0.7777777777777778,
+  "mrr": 0.6333333333333333,
+  "ndcg": 0.7671817075600601,
+  "avg_latency_ms": 125.51507449501918,
+  "median_latency_ms": 124.56817994825542,
+  "run_id": "ru_common_gte-multilingual-base_kg_ru_ru_metadata_opio_opio_Saima_Telecom_opio_Saima_Telecom_all_questions_kg.repaired",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 1000,
+      "overlap": 150
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "machine": ""
+}

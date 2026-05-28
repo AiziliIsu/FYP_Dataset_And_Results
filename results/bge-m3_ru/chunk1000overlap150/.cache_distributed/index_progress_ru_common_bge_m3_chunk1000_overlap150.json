@@ -1,0 +1,10 @@
+{
+  "collection": "ru_common_bge_m3_chunk1000_overlap150",
+  "status": "complete",
+  "expected_rows": 14091,
+  "initial_points": 5376,
+  "processed_rows": 14091,
+  "uploaded_rows": 8715,
+  "skipped_existing": 5376,
+  "updated_at": "2026-04-15T19:09:52.313174+00:00"
+}

@@ -1,0 +1,76 @@
+{
+  "model_name": "cohere-embed-v3",
+  "language": "kg",
+  "collection_name": "ru_common_cohere_embed_v3_chunk200_overlap100",
+  "total_questions": 109,
+  "evaluated_questions": 109,
+  "failed_questions": 0,
+  "reranking_enabled": false,
+  "pre_rerank_recall@10": 0.5504587155963303,
+  "pre_rerank_recall@20": 0.5504587155963303,
+  "post_rerank_recall@5": 0.5504587155963303,
+  "recall@1": 0.27522935779816515,
+  "recall@3": 0.46788990825688076,
+  "recall@5": 0.5504587155963303,
+  "pre_rerank_mrr": 0.3837920489296636,
+  "mrr": 0.3837920489296636,
+  "ndcg": 0.623152097477845,
+  "avg_latency_ms": 859.5366270789757,
+  "median_latency_ms": 789.3149270676076,
+  "run_id": "ru_common_cohere-embed-v3_kg_o!bank__Общие__Общие_all_questions_kg.repaired.jsonl",
+  "questions_file": "ru_ru_metadata/o!bank/Общие/Общие_all_questions_kg.repaired.jsonl",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 200,
+      "overlap": 100
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "experiments": {
+    "retrieval": {
+      "strategy": "hybrid",
+      "top_k": 5,
+      "candidate_multiplier": 20,
+      "hybrid": {
+        "dense": {
+          "model": "run"
+        },
+        "sparse": {
+          "strategy": "bm25"
+        },
+        "fusion": {
+          "method": "rrf",
+          "rrf_k": 60,
+          "dense_weight": 0.75,
+          "sparse_weight": 0.25
+        }
+      }
+    },
+    "reranking": {
+      "enabled": false,
+      "model": "bge-reranker-v2-m3",
+      "top_k": 10,
+      "cohere_model_id": "rerank-v4.0"
+    },
+    "chunk_window": {
+      "enabled": false,
+      "mode": "symmetric",
+      "left": 1,
+      "right": 1,
+      "forward": 2
+    }
+  },
+  "machine": ""
+}

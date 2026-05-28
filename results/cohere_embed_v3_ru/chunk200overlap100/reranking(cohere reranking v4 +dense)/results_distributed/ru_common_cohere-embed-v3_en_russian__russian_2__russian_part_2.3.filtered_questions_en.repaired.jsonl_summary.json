@@ -1,0 +1,76 @@
+{
+  "model_name": "cohere-embed-v3",
+  "language": "en",
+  "collection_name": "ru_common_cohere_embed_v3_chunk200_overlap100",
+  "total_questions": 556,
+  "evaluated_questions": 556,
+  "failed_questions": 0,
+  "reranking_enabled": true,
+  "pre_rerank_recall@10": 0.9424460431654677,
+  "pre_rerank_recall@20": 0.9496402877697842,
+  "post_rerank_recall@5": 0.9046762589928058,
+  "recall@1": 0.762589928057554,
+  "recall@3": 0.8651079136690647,
+  "recall@5": 0.9046762589928058,
+  "pre_rerank_mrr": 0.8444584267650814,
+  "mrr": 0.816726618705036,
+  "ndcg": 1.5017145549746398,
+  "avg_latency_ms": 559.7405952280857,
+  "median_latency_ms": 539.5104829221964,
+  "run_id": "ru_common_cohere-embed-v3_en_russian__russian_2__russian_part_2.3.filtered_questions_en.repaired.jsonl",
+  "questions_file": "ru_ru_metadata/russian/russian_2/russian_part_2.3.filtered_questions_en.repaired.jsonl",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 200,
+      "overlap": 100
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "experiments": {
+    "retrieval": {
+      "strategy": "dense",
+      "top_k": 20,
+      "candidate_multiplier": 1,
+      "hybrid": {
+        "dense": {
+          "model": "run"
+        },
+        "sparse": {
+          "strategy": "bm25"
+        },
+        "fusion": {
+          "method": "rrf",
+          "rrf_k": 60,
+          "dense_weight": 0.75,
+          "sparse_weight": 0.25
+        }
+      }
+    },
+    "reranking": {
+      "enabled": true,
+      "model": "Cohere Rerank-v4 Pro",
+      "top_k": 5,
+      "cohere_model_id": "rerank-english-v3.0"
+    },
+    "chunk_window": {
+      "enabled": false,
+      "mode": "symmetric",
+      "left": 1,
+      "right": 1,
+      "forward": 2
+    }
+  },
+  "machine": ""
+}

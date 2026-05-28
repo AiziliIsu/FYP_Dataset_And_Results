@@ -1,0 +1,38 @@
+{
+  "model_name": "bge-m3",
+  "language": "ru",
+  "collection_name": "ru_common_bge_m3_chunk150_overlap50",
+  "total_questions": 206,
+  "evaluated_questions": 206,
+  "failed_questions": 0,
+  "recall@1": 0.2087378640776699,
+  "recall@3": 0.3300970873786408,
+  "recall@5": 0.36893203883495146,
+  "mrr": 0.2752754661735244,
+  "ndcg": 0.4187787143588165,
+  "avg_latency_ms": 173.3125553398777,
+  "median_latency_ms": 170.21849999946426,
+  "run_id": "ru_common_bge-m3_ru_opio_Тарифы_и_тарифные_планы_all_questions_ru.repaired.jsonl",
+  "question_file": "opio_Тарифы_и_тарифные_планы_all_questions_ru.repaired.jsonl",
+  "question_file_path": "C:\\Users\\1000001392\\.vscode\\ru_common\\ru_ru_metadata\\opio\\opio_Тарифы_и_тарифные_планы\\opio_Тарифы_и_тарифные_планы_all_questions_ru.repaired.jsonl",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 150,
+      "overlap": 50
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "machine": "UCA-NR-NBK-HL9"
+}

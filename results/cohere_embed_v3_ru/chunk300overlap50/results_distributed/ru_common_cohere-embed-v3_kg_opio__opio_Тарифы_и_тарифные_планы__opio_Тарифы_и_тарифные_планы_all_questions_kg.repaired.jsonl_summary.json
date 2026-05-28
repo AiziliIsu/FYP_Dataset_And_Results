@@ -1,0 +1,37 @@
+{
+  "model_name": "cohere-embed-v3",
+  "language": "kg",
+  "collection_name": "ru_common_cohere_embed_v3_chunk300_overlap50",
+  "total_questions": 206,
+  "evaluated_questions": 206,
+  "failed_questions": 0,
+  "recall@1": 0.17475728155339806,
+  "recall@3": 0.2815533980582524,
+  "recall@5": 0.3155339805825243,
+  "mrr": 0.23780821390044696,
+  "ndcg": 0.329550838250806,
+  "avg_latency_ms": 297.74273228628147,
+  "median_latency_ms": 265.9583075437695,
+  "run_id": "ru_common_cohere-embed-v3_kg_opio__opio_Тарифы_и_тарифные_планы__opio_Тарифы_и_тарифные_планы_all_questions_kg.repaired.jsonl",
+  "questions_file": "ru_ru_metadata/opio/opio_Тарифы_и_тарифные_планы/opio_Тарифы_и_тарифные_планы_all_questions_kg.repaired.jsonl",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 300,
+      "overlap": 50
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "machine": ""
+}

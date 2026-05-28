@@ -1,0 +1,76 @@
+{
+  "model_name": "cohere-embed-v3",
+  "language": "ru",
+  "collection_name": "ru_common_cohere_embed_v3_chunk200_overlap100",
+  "total_questions": 206,
+  "evaluated_questions": 206,
+  "failed_questions": 0,
+  "reranking_enabled": true,
+  "pre_rerank_recall@10": 0.41262135922330095,
+  "pre_rerank_recall@20": 0.47572815533980584,
+  "post_rerank_recall@5": 0.3640776699029126,
+  "recall@1": 0.19902912621359223,
+  "recall@3": 0.3300970873786408,
+  "recall@5": 0.3640776699029126,
+  "pre_rerank_mrr": 0.25627686293020385,
+  "mrr": 0.26747572815533976,
+  "ndcg": 0.43147529114459293,
+  "avg_latency_ms": 28439.3498727993,
+  "median_latency_ms": 28067.663718480617,
+  "run_id": "ru_common_cohere-embed-v3_ru_opio__opio_Тарифы_и_тарифные_планы__opio_Тарифы_и_тарифные_планы_all_questions_ru.repaired.jsonl",
+  "questions_file": "ru_ru_metadata/opio/opio_Тарифы_и_тарифные_планы/opio_Тарифы_и_тарифные_планы_all_questions_ru.repaired.jsonl",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 200,
+      "overlap": 100
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "experiments": {
+    "retrieval": {
+      "strategy": "dense",
+      "top_k": 20,
+      "candidate_multiplier": 20,
+      "hybrid": {
+        "dense": {
+          "model": "run"
+        },
+        "sparse": {
+          "strategy": "bm25"
+        },
+        "fusion": {
+          "method": "rrf",
+          "rrf_k": 60,
+          "dense_weight": 0.75,
+          "sparse_weight": 0.25
+        }
+      }
+    },
+    "reranking": {
+      "enabled": true,
+      "model": "Qwen3-Reranker-0.6B",
+      "top_k": 5,
+      "cohere_model_id": "rerank-v4.0"
+    },
+    "chunk_window": {
+      "enabled": false,
+      "mode": "symmetric",
+      "left": 1,
+      "right": 1,
+      "forward": 2
+    }
+  },
+  "machine": ""
+}

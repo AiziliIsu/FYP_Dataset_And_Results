@@ -1,0 +1,38 @@
+{
+  "model_name": "multilingual-e5",
+  "language": "en",
+  "collection_name": "ru_common_multilingual_e5_chunk1000_overlap150",
+  "total_questions": 309,
+  "evaluated_questions": 309,
+  "failed_questions": 0,
+  "recall@1": 0.23300970873786409,
+  "recall@3": 0.3786407766990291,
+  "recall@5": 0.40129449838187703,
+  "mrr": 0.3032490882005445,
+  "ndcg": 0.49397845664840456,
+  "avg_latency_ms": 144.47016084158082,
+  "median_latency_ms": 141.27300000109244,
+  "run_id": "ru_common_multilingual-e5_en_Финансовый Отчет_all_questions_en.repaired.jsonl",
+  "question_file": "Финансовый Отчет_all_questions_en.repaired.jsonl",
+  "question_file_path": "C:\\Users\\1000001392\\.vscode\\ru_common\\ru_ru_metadata\\o!bank\\Финансовый Отчет\\Финансовый Отчет_all_questions_en.repaired.jsonl",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 1000,
+      "overlap": 150
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "machine": "UCA-NR-NBK-HL9"
+}

@@ -1,0 +1,36 @@
+{
+  "model_name": "cohere-embed-v3",
+  "language": "en",
+  "collection_name": "ru_common_cohere_embed_v3_chunk1000_overlap150",
+  "total_questions": 137,
+  "evaluated_questions": 137,
+  "failed_questions": 0,
+  "recall@1": 0.6204379562043796,
+  "recall@3": 0.8102189781021898,
+  "recall@5": 0.8321167883211679,
+  "mrr": 0.7200005793071486,
+  "ndcg": 0.8606878662270517,
+  "avg_latency_ms": 302.4538023393927,
+  "median_latency_ms": 280.59246903285384,
+  "run_id": "ru_common_cohere-embed-v3_en_opio_Банк_и_платежи_all_questions_en.repaired",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 1000,
+      "overlap": 150
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "machine": ""
+}

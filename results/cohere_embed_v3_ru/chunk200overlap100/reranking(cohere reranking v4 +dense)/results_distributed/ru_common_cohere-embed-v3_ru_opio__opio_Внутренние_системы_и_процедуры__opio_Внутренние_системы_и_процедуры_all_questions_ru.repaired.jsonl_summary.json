@@ -1,0 +1,76 @@
+{
+  "model_name": "cohere-embed-v3",
+  "language": "ru",
+  "collection_name": "ru_common_cohere_embed_v3_chunk200_overlap100",
+  "total_questions": 180,
+  "evaluated_questions": 180,
+  "failed_questions": 0,
+  "reranking_enabled": true,
+  "pre_rerank_recall@10": 0.6,
+  "pre_rerank_recall@20": 0.6444444444444445,
+  "post_rerank_recall@5": 0.5277777777777778,
+  "recall@1": 0.2111111111111111,
+  "recall@3": 0.42777777777777776,
+  "recall@5": 0.5277777777777778,
+  "pre_rerank_mrr": 0.40561273602940273,
+  "mrr": 0.32611111111111113,
+  "ndcg": 0.6113872508146876,
+  "avg_latency_ms": 549.6275782248833,
+  "median_latency_ms": 529.1922099422663,
+  "run_id": "ru_common_cohere-embed-v3_ru_opio__opio_Внутренние_системы_и_процедуры__opio_Внутренние_системы_и_процедуры_all_questions_ru.repaired.jsonl",
+  "questions_file": "ru_ru_metadata/opio/opio_Внутренние_системы_и_процедуры/opio_Внутренние_системы_и_процедуры_all_questions_ru.repaired.jsonl",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 200,
+      "overlap": 100
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "experiments": {
+    "retrieval": {
+      "strategy": "dense",
+      "top_k": 20,
+      "candidate_multiplier": 1,
+      "hybrid": {
+        "dense": {
+          "model": "run"
+        },
+        "sparse": {
+          "strategy": "bm25"
+        },
+        "fusion": {
+          "method": "rrf",
+          "rrf_k": 60,
+          "dense_weight": 0.75,
+          "sparse_weight": 0.25
+        }
+      }
+    },
+    "reranking": {
+      "enabled": true,
+      "model": "Cohere Rerank-v4 Pro",
+      "top_k": 5,
+      "cohere_model_id": "rerank-english-v3.0"
+    },
+    "chunk_window": {
+      "enabled": false,
+      "mode": "symmetric",
+      "left": 1,
+      "right": 1,
+      "forward": 2
+    }
+  },
+  "machine": ""
+}

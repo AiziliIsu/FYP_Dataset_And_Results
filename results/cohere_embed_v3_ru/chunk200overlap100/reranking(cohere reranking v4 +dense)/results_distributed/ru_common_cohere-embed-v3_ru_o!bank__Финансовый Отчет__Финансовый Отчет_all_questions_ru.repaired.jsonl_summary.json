@@ -1,0 +1,76 @@
+{
+  "model_name": "cohere-embed-v3",
+  "language": "ru",
+  "collection_name": "ru_common_cohere_embed_v3_chunk200_overlap100",
+  "total_questions": 309,
+  "evaluated_questions": 309,
+  "failed_questions": 0,
+  "reranking_enabled": true,
+  "pre_rerank_recall@10": 0.7281553398058253,
+  "pre_rerank_recall@20": 0.8381877022653722,
+  "post_rerank_recall@5": 0.6699029126213593,
+  "recall@1": 0.40129449838187703,
+  "recall@3": 0.5954692556634305,
+  "recall@5": 0.6699029126213593,
+  "pre_rerank_mrr": 0.44514351309415795,
+  "mrr": 0.4995145631067961,
+  "ndcg": 0.8720053153909106,
+  "avg_latency_ms": 551.9216627750582,
+  "median_latency_ms": 532.5896767899394,
+  "run_id": "ru_common_cohere-embed-v3_ru_o!bank__Финансовый Отчет__Финансовый Отчет_all_questions_ru.repaired.jsonl",
+  "questions_file": "ru_ru_metadata/o!bank/Финансовый Отчет/Финансовый Отчет_all_questions_ru.repaired.jsonl",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 200,
+      "overlap": 100
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "experiments": {
+    "retrieval": {
+      "strategy": "dense",
+      "top_k": 20,
+      "candidate_multiplier": 1,
+      "hybrid": {
+        "dense": {
+          "model": "run"
+        },
+        "sparse": {
+          "strategy": "bm25"
+        },
+        "fusion": {
+          "method": "rrf",
+          "rrf_k": 60,
+          "dense_weight": 0.75,
+          "sparse_weight": 0.25
+        }
+      }
+    },
+    "reranking": {
+      "enabled": true,
+      "model": "Cohere Rerank-v4 Pro",
+      "top_k": 5,
+      "cohere_model_id": "rerank-english-v3.0"
+    },
+    "chunk_window": {
+      "enabled": false,
+      "mode": "symmetric",
+      "left": 1,
+      "right": 1,
+      "forward": 2
+    }
+  },
+  "machine": ""
+}

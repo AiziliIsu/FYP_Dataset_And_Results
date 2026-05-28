@@ -1,0 +1,76 @@
+{
+  "model_name": "cohere-embed-v3",
+  "language": "kg",
+  "collection_name": "ru_common_cohere_embed_v3_chunk200_overlap100",
+  "total_questions": 309,
+  "evaluated_questions": 309,
+  "failed_questions": 0,
+  "reranking_enabled": true,
+  "pre_rerank_recall@10": 0.6925566343042071,
+  "pre_rerank_recall@20": 0.7637540453074434,
+  "post_rerank_recall@5": 0.6148867313915858,
+  "recall@1": 0.37540453074433655,
+  "recall@3": 0.540453074433657,
+  "recall@5": 0.6148867313915858,
+  "pre_rerank_mrr": 0.4459293902544376,
+  "mrr": 0.4657497303128372,
+  "ndcg": 0.9046672131469777,
+  "avg_latency_ms": 41808.780318415425,
+  "median_latency_ms": 41435.534936375916,
+  "run_id": "ru_common_cohere-embed-v3_kg_o!bank__Финансовый Отчет__Финансовый Отчет_all_questions_kg.repaired.jsonl",
+  "questions_file": "ru_ru_metadata/o!bank/Финансовый Отчет/Финансовый Отчет_all_questions_kg.repaired.jsonl",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 200,
+      "overlap": 100
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "experiments": {
+    "retrieval": {
+      "strategy": "dense",
+      "top_k": 20,
+      "candidate_multiplier": 20,
+      "hybrid": {
+        "dense": {
+          "model": "run"
+        },
+        "sparse": {
+          "strategy": "bm25"
+        },
+        "fusion": {
+          "method": "rrf",
+          "rrf_k": 60,
+          "dense_weight": 0.75,
+          "sparse_weight": 0.25
+        }
+      }
+    },
+    "reranking": {
+      "enabled": true,
+      "model": "Qwen3-Reranker-0.6B",
+      "top_k": 5,
+      "cohere_model_id": "rerank-v4.0"
+    },
+    "chunk_window": {
+      "enabled": false,
+      "mode": "symmetric",
+      "left": 1,
+      "right": 1,
+      "forward": 2
+    }
+  },
+  "machine": ""
+}

@@ -1,0 +1,38 @@
+{
+  "model_name": "multilingual-e5",
+  "language": "en",
+  "collection_name": "ru_common_multilingual_e5_chunk1000_overlap150",
+  "total_questions": 169,
+  "evaluated_questions": 169,
+  "failed_questions": 0,
+  "recall@1": 0.6627218934911243,
+  "recall@3": 0.8402366863905325,
+  "recall@5": 0.8816568047337278,
+  "mrr": 0.7546351084812624,
+  "ndcg": 0.8756839086769391,
+  "avg_latency_ms": 150.26704319517683,
+  "median_latency_ms": 146.67339999869,
+  "run_id": "ru_common_multilingual-e5_en_opio_Акции_и_новости_all_questions_en.repaired.jsonl",
+  "question_file": "opio_Акции_и_новости_all_questions_en.repaired.jsonl",
+  "question_file_path": "C:\\Users\\1000001392\\.vscode\\ru_common\\ru_ru_metadata\\opio\\opio_Акции_и_новости\\opio_Акции_и_новости_all_questions_en.repaired.jsonl",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 1000,
+      "overlap": 150
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "machine": "UCA-NR-NBK-HL9"
+}

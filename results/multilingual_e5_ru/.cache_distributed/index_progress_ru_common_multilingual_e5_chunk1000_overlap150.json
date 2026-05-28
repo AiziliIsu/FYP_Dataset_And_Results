@@ -1,0 +1,10 @@
+{
+  "collection": "ru_common_multilingual_e5_chunk1000_overlap150",
+  "status": "complete",
+  "expected_rows": 14091,
+  "initial_points": 0,
+  "processed_rows": 14091,
+  "uploaded_rows": 14091,
+  "skipped_existing": 0,
+  "updated_at": "2026-04-16T14:51:47.544727+00:00"
+}

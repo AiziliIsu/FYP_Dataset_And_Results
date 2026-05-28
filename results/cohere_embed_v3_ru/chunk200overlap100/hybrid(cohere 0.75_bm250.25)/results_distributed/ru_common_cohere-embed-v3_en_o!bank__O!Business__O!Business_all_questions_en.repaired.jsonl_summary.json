@@ -1,0 +1,76 @@
+{
+  "model_name": "cohere-embed-v3",
+  "language": "en",
+  "collection_name": "ru_common_cohere_embed_v3_chunk200_overlap100",
+  "total_questions": 184,
+  "evaluated_questions": 184,
+  "failed_questions": 0,
+  "reranking_enabled": false,
+  "pre_rerank_recall@10": 0.22282608695652173,
+  "pre_rerank_recall@20": 0.22282608695652173,
+  "post_rerank_recall@5": 0.22282608695652173,
+  "recall@1": 0.06521739130434782,
+  "recall@3": 0.18478260869565216,
+  "recall@5": 0.22282608695652173,
+  "pre_rerank_mrr": 0.1260869565217391,
+  "mrr": 0.1260869565217391,
+  "ndcg": 0.18938701240451647,
+  "avg_latency_ms": 1001.6711683761653,
+  "median_latency_ms": 964.265926508233,
+  "run_id": "ru_common_cohere-embed-v3_en_o!bank__O!Business__O!Business_all_questions_en.repaired.jsonl",
+  "questions_file": "ru_ru_metadata/o!bank/O!Business/O!Business_all_questions_en.repaired.jsonl",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 200,
+      "overlap": 100
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "experiments": {
+    "retrieval": {
+      "strategy": "hybrid",
+      "top_k": 5,
+      "candidate_multiplier": 20,
+      "hybrid": {
+        "dense": {
+          "model": "run"
+        },
+        "sparse": {
+          "strategy": "bm25"
+        },
+        "fusion": {
+          "method": "rrf",
+          "rrf_k": 60,
+          "dense_weight": 0.75,
+          "sparse_weight": 0.25
+        }
+      }
+    },
+    "reranking": {
+      "enabled": false,
+      "model": "bge-reranker-v2-m3",
+      "top_k": 10,
+      "cohere_model_id": "rerank-v4.0"
+    },
+    "chunk_window": {
+      "enabled": false,
+      "mode": "symmetric",
+      "left": 1,
+      "right": 1,
+      "forward": 2
+    }
+  },
+  "machine": ""
+}

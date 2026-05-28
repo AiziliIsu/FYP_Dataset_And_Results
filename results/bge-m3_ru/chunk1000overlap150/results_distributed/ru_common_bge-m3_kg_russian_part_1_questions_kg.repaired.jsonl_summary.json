@@ -1,0 +1,38 @@
+{
+  "model_name": "bge-m3",
+  "language": "kg",
+  "collection_name": "ru_common_bge_m3_chunk1000_overlap150",
+  "total_questions": 246,
+  "evaluated_questions": 246,
+  "failed_questions": 0,
+  "recall@1": 0.5650406504065041,
+  "recall@3": 0.7398373983739838,
+  "recall@5": 0.7682926829268293,
+  "mrr": 0.65732029939347,
+  "ndcg": 0.8726770351772819,
+  "avg_latency_ms": 169.73775569387385,
+  "median_latency_ms": 166.26900003757328,
+  "run_id": "ru_common_bge-m3_kg_russian_part_1_questions_kg.repaired.jsonl",
+  "question_file": "russian_part_1_questions_kg.repaired.jsonl",
+  "question_file_path": "C:\\Users\\1000001392\\.vscode\\ru_common\\ru_ru_metadata\\russian\\russian_1\\russian_part_1_questions_kg.repaired.jsonl",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 1000,
+      "overlap": 150
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "machine": "UCA-NR-NBK-HL9"
+}

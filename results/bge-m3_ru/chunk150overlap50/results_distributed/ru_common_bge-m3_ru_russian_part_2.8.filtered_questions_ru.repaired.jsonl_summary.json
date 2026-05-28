@@ -1,0 +1,38 @@
+{
+  "model_name": "bge-m3",
+  "language": "ru",
+  "collection_name": "ru_common_bge_m3_chunk150_overlap50",
+  "total_questions": 493,
+  "evaluated_questions": 493,
+  "failed_questions": 0,
+  "recall@1": 0.8113590263691683,
+  "recall@3": 0.8904665314401623,
+  "recall@5": 0.922920892494929,
+  "mrr": 0.8577320583405775,
+  "ndcg": 1.5017580720497363,
+  "avg_latency_ms": 144.75753144032848,
+  "median_latency_ms": 142.24290000129258,
+  "run_id": "ru_common_bge-m3_ru_russian_part_2.8.filtered_questions_ru.repaired.jsonl",
+  "question_file": "russian_part_2.8.filtered_questions_ru.repaired.jsonl",
+  "question_file_path": "C:\\Users\\1000001392\\.vscode\\ru_common\\ru_ru_metadata\\russian\\russian_2\\russian_part_2.8.filtered_questions_ru.repaired.jsonl",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 150,
+      "overlap": 50
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "machine": "UCA-NR-NBK-HL9"
+}

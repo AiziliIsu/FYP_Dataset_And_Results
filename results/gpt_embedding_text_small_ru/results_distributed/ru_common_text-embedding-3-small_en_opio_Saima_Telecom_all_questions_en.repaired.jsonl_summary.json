@@ -1,0 +1,36 @@
+{
+  "model_name": "text-embedding-3-small",
+  "language": "en",
+  "collection_name": "ru_common_text_embedding_3_small_chunk1000_overlap150",
+  "total_questions": 9,
+  "evaluated_questions": 9,
+  "failed_questions": 0,
+  "recall@1": 0.6666666666666666,
+  "recall@3": 0.7777777777777778,
+  "recall@5": 0.7777777777777778,
+  "mrr": 0.7160493827160495,
+  "ndcg": 0.8609117692645919,
+  "avg_latency_ms": 239.93137866879502,
+  "median_latency_ms": 191.28398201428354,
+  "run_id": "ru_common_text-embedding-3-small_en_opio_Saima_Telecom_all_questions_en.repaired.jsonl",
+  "frozen": {
+    "preprocessing": {
+      "lowercase": false,
+      "remove_special_chars": false,
+      "strip_whitespace": true,
+      "normalize_unicode": true
+    },
+    "chunking": {
+      "strategy": "fixed",
+      "chunk_size": 1000,
+      "overlap": 150
+    },
+    "embedding": {
+      "batch_size": 64
+    },
+    "retrieval": {
+      "top_k": 10
+    }
+  },
+  "machine": ""
+}
